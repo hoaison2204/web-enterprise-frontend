@@ -1,0 +1,41 @@
+.category-container {
+    width : 80%;
+    margin: 0 auto;
+
+    .department-content {
+        display: flex;
+
+        .content-left {
+            width      : 20%;
+            height     : 200px;
+            border     : 1px solid;
+            text-align : center;
+            padding-top: 4%;
+
+            .Department-text {
+                text-transform: uppercase;
+                font-weight   : bold;
+                font-size     : 20px;
+            }
+
+            .topic {
+                width        : 80%;
+                margin       : 0 auto;
+                cursor       : pointer;
+                text-align   : center;
+                border-radius: 20px;
+                border       : 1px solid rgb(125, 214, 255);
+            }
+
+            .list-department {
+                width : 50%;
+                margin: 0 auto;
+            }
+        }
+
+        .fa-download {
+            cursor    : pointer;
+            background: #ddd;
+        }
+    }
+}

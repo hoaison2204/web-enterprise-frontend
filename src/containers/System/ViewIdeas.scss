@@ -1,0 +1,118 @@
+.view-ideas-contaner {
+    display: flex;
+
+    .content-left {
+        width      : 22%;
+        padding-top: 2%;
+
+        .list-department {
+            padding-bottom: 2%;
+        }
+
+        .form-custom {
+            border: none !important;
+        }
+
+        .topic {
+            width        : 80%;
+            margin       : 0 auto;
+            cursor       : pointer;
+            text-align   : center;
+            border-radius: 20px;
+            border       : 1px solid rgb(125, 214, 255);
+
+            &.active {
+                background-color: rgb(125, 214, 255);
+            }
+        }
+
+    }
+
+    .content-right {
+        width : 78%;
+        height: 300px;
+
+        .content-header {
+            .start-end-date {
+
+                span {
+                    margin: 15%;
+                }
+
+                .start-date {
+                    color: blue;
+                }
+
+                .end-date {
+                    color: red;
+                }
+            }
+        }
+
+        .ideas {
+            width           : 100%;
+            background-color: rgb(213, 242, 255);
+            text-transform  : uppercase;
+            border-radius   : 20px;
+            margin-top      : 5px;
+            box-shadow      : 0 3px 19px rgb(240, 240, 240);
+            padding-left    : 30px;
+
+            .idea-title {
+                font-size  : 15px;
+                font-weight: 600;
+            }
+
+            .reaction {
+                display        : flex;
+                align-items    : flex-end;
+                justify-content: space-evenly;
+                padding-bottom : 10px;
+
+                .fa-download {
+                    transform: scale(2.3);
+                    color    : rgb(95, 106, 255);
+                    cursor   : pointer;
+
+                }
+
+                .fa-comments {
+                    transform: scale(2.3);
+                    color    : rgb(137, 145, 253);
+                    cursor   : pointer;
+                }
+
+                .like,
+                .dislike {
+                    width  : 20%;
+                    display: flex;
+                    gap    : 30px;
+
+                    .icon {
+                        color: rgb(228, 202, 169);
+                    }
+
+                    .active {
+                        color: rgb(42, 7, 214);
+                    }
+
+                    i {
+                        font-size: 40px;
+                    }
+
+                    span {
+                        margin-left: 5px;
+                    }
+                }
+
+                .comment-container {
+                    .list-comment {
+                        border: 2px solid red;
+                    }
+                }
+            }
+
+
+        }
+    }
+}
